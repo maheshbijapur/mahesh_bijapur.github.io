@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mahesh Bijapur — Senior iOS Resume</title>
+  <style>
+    :root{--bg:#f7f9fb;--card:#ffffff;--muted:#6b7280;--accent:#0f62fe;--accent-2:#0b84ff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#0f172a}
+    .container{max-width:900px;margin:32px auto;padding:28px}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(12,15,23,0.06)}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .meta{display:flex;gap:18px;align-items:center}
+    .name{font-size:22px;font-weight:700}
+    .title{color:var(--muted);font-size:13px}
+    .contact{font-size:13px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:20px}
+
+    /* left column styles */
+    .section{margin-bottom:18px}
+    h2{font-size:15px;margin:0 0 10px 0;color:#071135}
+    p.lead{margin:0;color:#253858}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0;color:#243447}
+    .skill-grid{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef6ff;color:#0b63d6;padding:6px 10px;border-radius:8px;font-size:12px}
+
+    /* right column */
+    .side{background:#fbfdff;padding:18px;border-radius:10px}
+    .side h3{margin:6px 0;color:#09203f}
+    .mini{font-size:13px;color:var(--muted)}
+
+    /* project box */
+    .project{border-left:3px solid rgba(15,98,254,0.12);padding:12px 12px;margin:10px 0;border-radius:6px;background:linear-gradient(180deg, rgba(15,98,254,0.02), transparent)}
+    .project h4{margin:0 0 6px 0}
+    .pill{display:inline-block;background:#eef2ff;color:#2b3ecf;padding:4px 8px;border-radius:999px;font-size:12px;margin-right:8px}
+
+    footer{display:flex;gap:12px;align-items:center;justify-content:flex-end;margin-top:18px}
+    button{background:var(--accent);color:white;border:none;padding:10px 12px;border-radius:8px;cursor:pointer}
+    button.ghost{background:transparent;color:var(--accent);border:1px solid rgba(15,98,254,0.12)}
+
+    .muted{color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.meta{flex-direction:column;align-items:flex-start}.container{margin:12px}} 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="document">
+      <header>
+        <div>
+          <div class="name">Mahesh Bijapur</div>
+          <div class="title">Staff-Level iOS Developer • Modular SDK Architect • Product-Focused Technologist</div>
+          <div class="contact muted">B.E. Computer Science, VTU Belagavi • Bangalore, India</div>
+        </div>
+        <div class="meta">
+          <div style="text-align:right">
+            <div class="contact">jobs.mahesh1020@gmail.com</div>
+            <div class="contact">+91 91646 81460</div>
+            <div class="contact"><a href="https://linkedin.com/in/mahesh-b-657b3b3a" target="_blank">linkedin.com/in/mahesh-b-657b3b3a</a></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <!-- left column -->
+        <main>
+          <section class="section">
+            <h2>Executive Summary</h2>
+            <p class="lead">Staff-level iOS developer with <strong>10+ years</strong> building scalable apps and modular SDKs for B2C & enterprise. Strong in Swift, Objective-C, Combine, Swift concurrency and offline-first architectures. I drive end-to-end delivery — from architecture and API design to CI/CD and App Store releases — and enjoy mentoring teams and solving ambiguous product problems.</p>
+          </section>
+
+          <section class="section">
+            <h2>Core Competencies</h2>
+            <div class="skill-grid">
+              <span class="skill">Swift • Obj-C</span>
+              <span class="skill">SwiftUI • UIKit</span>
+              <span class="skill">Concurrency</span>
+              <span class="skill">Modular SDKs</span>
+              <span class="skill">ARKit • SceneKit</span>
+              <span class="skill">CI/CD • Jenkins</span>
+              <span class="skill">Instruments • Profiling</span>
+              <span class="skill">Design Patterns</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Experience (Selected)</h2>
+
+            <div class="project">
+              <h4>Marketo iOS SDK (Adobe)</h4>
+              <div class="muted">Modular analytics & messaging SDK — used by 30+ clients</div>
+              <ul>
+                <li><strong>Event Tracking:</strong> user actions, app sessions, custom checkpoints</li>
+                <li><strong>Push Notification Management:</strong> registration, delivery tracking, deep-link handling</li>
+                <li><strong>In-App Messaging:</strong> dynamic message rendering and interaction logging</li>
+                <li><strong>User Attribute Management:</strong> lead identification, segmentation, profile updates</li>
+                <li><strong>Session Management:</strong> lifecycle and session analytics</li>
+                <li><strong>Security:</strong> token-based secure mode for lead association</li>
+              </ul>
+              <div class="muted" style="margin-top:8px">Impact: Reduced downstream integration time by <strong>30%</strong>. Rewrote networking stack using async/await to fix production crash post-iOS update.</div>
+            </div>
+
+            <div class="project">
+              <h4>Marketo Moments App</h4>
+              <div class="muted">Campaign dashboard & mobile UI for marketers</div>
+              <ul>
+                <li>Migration from Objective-C to Swift and modular refactor</li>
+                <li>State management with Combine; improved stability by 40%</li>
+                <li>Integrated analytics dashboards and in-app campaign actions</li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <h4>JioMoney — UPI & QR Payments</h4>
+              <div class="muted">Secure payments and device-binding for large-scale UPI flows</div>
+              <ul>
+                <li>Encrypted UPI workflows and device binding for secure transactions</li>
+                <li>Integrated Bharat QR and NPCI libraries; handled edge-case failures</li>
+                <li>Reduced fraud complaints by <strong>40%</strong> after secure binding</li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <h4>DataGrinch Analytics SDK</h4>
+              <div class="muted">Offline-first analytics, crash logging and dynamic schema support</div>
+              <ul>
+                <li>Local queueing, batching, and exponential backoff retry logic</li>
+                <li>Optimized SDK footprint and cold-start performance</li>
+                <li>Export pipelines for dynamic charting and reporting</li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <h4>CI/CD & Tooling</h4>
+              <ul>
+                <li>Jenkins pipelines for build, test, signing and distribution</li>
+                <li>Automated artifacts, TestFlight deploys and release notes automation</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Personal Projects & Contributions</h2>
+            <ul>
+              <li>Background file uploader with retry & exponential backoff using Combine</li>
+              <li>AI-powered document scanner (VisionKit + CoreML)</li>
+              <li>AR/3D prototypes using ARKit & SceneKit (measurement, demos)</li>
+              <li>Internal architecture guides for modular SDKs and onboarding</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>Education</h2>
+            <p class="muted">B.E. in Computer Science — VTU Belagavi (2006–2010)</p>
+          </section>
+
+        </main>
+
+        <!-- right column -->
+        <aside class="side">
+          <h3>Contact & Links</h3>
+          <div class="mini">jobs.mahesh1020@gmail.com<br>+91 91646 81460</div>
+          <div style="margin-top:10px"><a href="https://linkedin.com/in/mahesh-b-657b3b3a" target="_blank">LinkedIn profile</a></div>
+
+          <h3 style="margin-top:16px">Technical Skills</h3>
+          <div class="mini">Swift, Objective-C, SwiftUI, UIKit, Combine, ARKit, SceneKit, CoreData, REST, JSON, URLSession</div>
+
+          <h3 style="margin-top:12px">Tools & Platforms</h3>
+          <div class="mini">Xcode, Instruments, Jenkins, Git, Postman, TestFlight, NewRelic, PagerDuty</div>
+
+          <h3 style="margin-top:12px">AI & Productivity</h3>
+          <div class="mini">ChatGPT • GitHub Copilot • Copilot X • Notion AI • Bard • Raycast • Loom</div>
+
+          <h3 style="margin-top:12px">Awards</h3>
+          <div class="mini">Partner in Excellence • GEM Award • Individual Excellence — Globallogic</div>
+
+          <h3 style="margin-top:12px">Availability</h3>
+          <div class="mini">Open to remote senior iOS roles • Immediate to 4 weeks notice</div>
+        </aside>
+      </div>
+
+      <footer>
+        <button onclick="window.print()">Download / Print PDF</button>
+        <button class="ghost" onclick="toggleTheme()">Toggle Dark</button>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme(){
+      const root = document.documentElement;
+      if(root.style.getPropertyValue('--bg') === '#0b1220'){
+        root.style.setProperty('--bg','#f7f9fb');root.style.setProperty('--card','#ffffff');root.style.setProperty('--muted','#6b7280');root.style.setProperty('--accent','#0f62fe');
+      } else {
+        root.style.setProperty('--bg','#0b1220');root.style.setProperty('--card','#071325');root.style.setProperty('--muted','#94a3b8');root.style.setProperty('--accent','#6bb0ff');
+      }
+    }
+
+    // small print-friendly adjustments
+    window.onbeforeprint = ()=>document.body.style.background='#fff';
+    window.onafterprint = ()=>document.body.style.background='';
+  </script>
+</body>
+</html>
